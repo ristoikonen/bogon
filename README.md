@@ -1,13 +1,18 @@
-# Bogong Migration Analysis - Captains Flat BOM radar at 18:00 9.24.2026
+# Bogong Moth Migration Analysis - Captains Flat BOM radar at 18:00 on 24th of September 2026
+### Using Python Math and Radar Toolkit with AI  - Parsing radar data streams, handling spatial/temporal bins, and quantifying aerial wildlife populations programmatically
+## Weather background
 
-## WEATHER INTRO
-
-On **Thursday, 24 September 2026**, strong north-westerly to westerly weather patterns significantly impacted **South-eastern Australia** ahead of a major front:
+On **Thursday, 24 September 2026**, strong north-westerly to westerly weather patterns significantly impacted South-eastern Australia ahead of a major front:
 * **Synoptic Driving Forces:** Strong, hot north-westerly winds swept across the south-eastern states ahead of an approaching low-pressure trough and a strong cold front.
-* **Regional Impacts:** The strong north-westerlies dragged hot air from the interior, driving temperatures up into the low-to-mid 30s (°C) and creating elevated fire dangers across parts of **New South Wales (NSW)** and **Queensland**.
+* **Regional Impacts:** The strong north-westerlies dragged hot air from the interior, driving temperatures up into the low-to-mid 30s (°C) and creating elevated fire dangers across parts of New South Wales and Queensland.
 * **System Resolution:** The system eventually triggered rapid thunderstorms and a sharp cold snap as the winds shifted westerly to south-westerly.
 
 ***
+
+## Bogong moth stream altitudes
+For large nocturnal migratory macro-insects like the Bogong moth (Agrotis infusa), high-volume migration streams tracked by entomological and weather radars typically concentrate at flight altitudes between 150 meters and 1,200 meters above ground level.
+Chapman et al. proved that nocturnal migratory moths are active navigators: they selectively launch into specific, high-speed altitude layers and use an internal compass to compensate for cross-winds. They form dense, organized aerial corridors. This active aggregation is precisely why weather radar picks up massive, clean clusters of biological returns (like my 15–20 dBZ bins) rather than a weak, diffuse haze of random noise.
+
 
 ## MAIN ANALYSIS
 

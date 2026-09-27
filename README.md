@@ -62,3 +62,7 @@ This tracking profiles the physical footprint and volume boundaries mapping acro
 * **Maximum Radial Envelope:** Stretching roughly **120 kilometres** downwind and along the mountain ridges.
 
 With a true biological area footprint of **~45,034 square kilometres** now locked in at an average density of **25.56 moths per million cubic metres**, the revised model places the transient population for this flight pulse at approximately **11.51 billion Bogong moths** traveling through the radar's airspace.
+
+## Bogong Moth
+
+![Bogong Moth](./BogongMoth.png)

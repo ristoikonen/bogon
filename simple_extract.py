@@ -9,7 +9,7 @@ reflectivity = radar.fields['reflectivity_horizontal']['data']
 # 2. Set your research threshold (e.g., 20.0 dBZ for rain)
 target_threshold = 10.0
 
-# 3. Find indices where data is valid, not NaN, and greater than or equal to 20 dBZ
+# 3. Find indices where data is valid, not NaN, and greater than or equal to 'target_threshold' dBZ
 matching_bins = np.where(
     (~reflectivity.mask) & 
     (~np.isnan(reflectivity)) & 

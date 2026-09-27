@@ -1,7 +1,8 @@
 import pyart
 import numpy as np
 
-# 1. Load the raw polar volume ODIM HDF5 file
+# 1. Load the raw polar volume ODIM HDF5 file - ref file too!
+# radar = pyart.aux_io.read_odim_h5('26aug/40_20260826_180000.pvol.h5')
 radar = pyart.aux_io.read_odim_h5('40_20260924_180000.pvol.h5')
 
 # 2. Check the available field keys in your file

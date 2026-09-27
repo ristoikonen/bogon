@@ -2,12 +2,13 @@ import numpy as np
 import pyart
 import numpy as np
 
-# 1. Load the data
+# 1. Load the data - 26sept/40_20260826_180000.pvol.h5 ref file too!
+# radar = pyart.aux_io.read_odim_h5('26aug/40_20260826_180000.pvol.h5')
 radar = pyart.aux_io.read_odim_h5('40_20260924_180000.pvol.h5')
 reflectivity = radar.fields['reflectivity_horizontal']['data']
 
 # 2. Set your research threshold (e.g., 20.0 dBZ for rain)
-target_threshold = 20.0
+target_threshold = 10.0
 
 # 3. Find indices where data is valid, not NaN, and greater than or equal to 20 dBZ
 matching_bins = np.where(

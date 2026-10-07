@@ -7,6 +7,14 @@ On **Thursday, 24 September 2026**, strong north-westerly to westerly weather pa
 * **Regional Impacts:** The strong north-westerlies dragged hot air from the interior, driving temperatures up into the low-to-mid 30s (°C) and creating elevated fire dangers across parts of New South Wales and Queensland.
 * **System Resolution:** The system eventually triggered rapid thunderstorms and a sharp cold snap as the winds shifted westerly to south-westerly.
 
+Weather model estimate near Captains Flat indicates **northwesterly winds** through much of the approximate 150–1,200 m-above-ground layer
+
+| Approximate level | Estimated wind |
+| --- | --- |
+| 900 hPa (~0.3 km above local ground) | **9.6 m/s** (~35 km/h), from **298°** |
+| 850 hPa (~0.8 km above local ground) | **12.2 m/s** (~44 km/h), from **298°** |
+| 800 hPa (~1.3 km above local ground; around the top of that layer) | **12.1 m/s** (~44 km/h), from **295°** |
+
 ***
 
 ## Bogong moth stream altitudes

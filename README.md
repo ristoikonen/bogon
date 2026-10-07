@@ -16,28 +16,28 @@ Chapman et al. proved that nocturnal migratory moths are active navigators: they
 
 ## MAIN ANALYSIS
 
-### Run the TensorFlow analysis
+### Run the radar analysis
 
-The `.pvol.h5` files are ODIM radar volumes, not TensorFlow model files. Py-ART
-reads the radar fields from HDF5; the script converts the masked reflectivity
-and velocity arrays to TensorFlow tensors for thresholding and summary
-calculations.
+The `.pvol.h5` files are ODIM radar volumes. Py-ART reads the radar fields
+from HDF5, and NumPy performs the reflectivity filtering and summary
+calculations. TensorFlow is not currently needed; it may be useful later if
+you add a trained radar-echo classification model.
 
-Install the Python packages if needed:
+Install the required package if needed:
 
 ```console
-python -m pip install arm_pyart tensorflow
+python -m pip install arm_pyart
 ```
 
 Run the analysis from the repository directory:
 
 ```console
-python tensorflow_analysis.py 40_20260924_180000.pvol.h5
-python tensorflow_analysis.py 26aug/40_20260826_180000.pvol.h5 --threshold 15
+python tensorflow_analysis.py 40_20260924_180000.pvol.h5 --min-reflectivity -5 --max-reflectivity 15
+python tensorflow_analysis.py 26aug/40_20260826_180000.pvol.h5 --min-reflectivity -5 --max-reflectivity 15
 ```
 
-It prints the number of valid gates at or above the reflectivity threshold,
-their mean reflectivity, and radial-velocity statistics for gates with valid
+It prints the number of valid gates in the selected reflectivity range, their
+mean reflectivity, and radial-velocity statistics for gates with valid
 velocity measurements.
 
 * **Dataset:** `40_20260924_180000.pvol.h5`
@@ -86,6 +86,10 @@ This tracking profiles the physical footprint and volume boundaries mapping acro
 * **Maximum Radial Envelope:** Stretching roughly **120 kilometres** downwind and along the mountain ridges.
 
 With a true biological area footprint of **~45,034 square kilometres** now locked in at an average density of **25.56 moths per million cubic metres**, the revised model places the transient population for this flight pulse at approximately **11.51 billion Bogong moths** traveling through the radar's airspace.
+
+## Future Work
+
+Add TensorFlow to train or run a model to classify radar gates as biological echoes, precipitation, or clutter.
 
 ## Bogong Moth
 

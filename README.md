@@ -16,6 +16,30 @@ Chapman et al. proved that nocturnal migratory moths are active navigators: they
 
 ## MAIN ANALYSIS
 
+### Run the TensorFlow analysis
+
+The `.pvol.h5` files are ODIM radar volumes, not TensorFlow model files. Py-ART
+reads the radar fields from HDF5; the script converts the masked reflectivity
+and velocity arrays to TensorFlow tensors for thresholding and summary
+calculations.
+
+Install the Python packages if needed:
+
+```console
+python -m pip install arm_pyart tensorflow
+```
+
+Run the analysis from the repository directory:
+
+```console
+python tensorflow_analysis.py 40_20260924_180000.pvol.h5
+python tensorflow_analysis.py 26aug/40_20260826_180000.pvol.h5 --threshold 15
+```
+
+It prints the number of valid gates at or above the reflectivity threshold,
+their mean reflectivity, and radial-velocity statistics for gates with valid
+velocity measurements.
+
 * **Dataset:** `40_20260924_180000.pvol.h5`
 * **Target Threshold:** >= 10.0 dBZ
 * **Clutter Proxy Baseline (TH - DBZH):** Close to 0.77 dB removal profile
